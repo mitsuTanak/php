@@ -12,6 +12,7 @@
     <style>
         .destaque{color: green;}
         .html{color: orange;}
+        .p{font-size 100px}
         .php{color: blue}
     </style>
 </head>
@@ -45,7 +46,7 @@
         $linguagem = "Linguagem <span class='php'>PHP</span>"
     ?>
 
-    <p>Parágrafo mesclando<span class="html"> HTML</span> com <?=$linguagem?></p>
+    <p class="p">Parágrafo mesclando<span class="html"> HTML</span> com <?=$linguagem?></p>
 
 </body>
 </html>
