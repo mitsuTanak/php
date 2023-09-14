@@ -69,9 +69,27 @@
         <li>Exibir a resposta da condicional simples com o comando echo no modo 1</li>
         <li>Exibir a resposta da condicional simples com o comando echo no modo 2</li>
     </ul>
+    <hr>
 
     <!-- Criar aqui seu programa PHP -->
-    
+    <?php
+        $a = 5;
+
+        if ($a > 1){
+
+            echo "$a é Maior que 1 <br>";
+        }
+
+    ?>
+
+    <?php
+        $a = 5;
+
+        if ($a > 1) echo "$a é Maior que 1";
+        
+
+    ?>
+
     
     <hr>
     
@@ -122,6 +140,27 @@
 
     <!-- Criar aqui seu programa PHP -->
 
+    <?php
+                       
+        $produto = 'Ultrabook ASUS';
+        $eMinimo = 14;
+        $eAtual = 0;
+
+        echo "<h3> $produto </h3>";
+
+        if ( $eAtual <= $eMinimo) {
+
+            echo "<div class = 'repor'> É necessário comprar </div>";
+        }
+
+        else {
+            echo "<div class = 'ok'>Estoque OK!</div>";
+        }
+                            
+    ?>
+
+
+
     
     <hr>
 
@@ -168,7 +207,37 @@
     <hr>
     
     <!-- Criar aqui seu programa PHP -->
-    
+
+    <?php
+
+        $escolha = '1';
+        $produto1 = '1';
+        $produto2 = '2';
+        $produto3 = '3';
+
+
+
+        if ($escolha === $produto1 ) {
+
+            echo "Sua Esfiha Está sendo Preparada";
+
+        }elseif($escolha === $produto2 ){
+
+            echo "Sua Pastel Está sendo Preparada";
+
+        }elseif ($escolha === $produto3 ) {
+        
+            echo "Sua Pizza Está sendo Preparada";
+        
+        }else {
+
+            echo "Está opção é invalida";
+
+        }
+
+        
+        
+    ?>
     <hr>
 
     <!-- ___________________________________________________________________ -->
