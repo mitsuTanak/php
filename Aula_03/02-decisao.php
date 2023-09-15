@@ -271,6 +271,27 @@
     <hr>
 
     <!-- Criar aqui seu programa PHP -->
+
+
+    <?php
+        
+        switch ($escolha) {
+            
+            case $produto1:
+                echo "Seu Pedido ($produto1) Está sendo preparada";
+            break;
+            case $produto2:
+                echo "Seu Pedido (2) Está sendo preparada";
+            break;
+            case $produto3:
+                echo "Seu Pedido (3) Está sendo preparada";
+            break;
+            default:
+                echo "Opção Invalida";
+            break;
+        }
+        
+    ?>
     
     
     <!-- Rodapé -->
