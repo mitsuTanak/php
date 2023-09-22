@@ -116,7 +116,23 @@
 
 
     <!-- 5ª Digitação (Aqui) -->
+
+
+    <?php
     
+        foreach ($meses as $nMeses) {
+                
+            
+
+    ?>
+
+    <li><?=$nMeses?></li>
+
+    <?php    
+        }
+
+    ?>
+
 
 </ol>
 <!-- _______________________________________________________________________________ -->
@@ -133,6 +149,16 @@
 
     //  6ª Digitação (Aqui) 
 
+
+    foreach ($clubes as $clube => $apelido) {
+?>
+
+    <p>
+        O <?=$clube?> tem o apelido de: <?=$apelido?> 
+    </p>
+
+<?php
+    }
 ?>
 <!-- _______________________________________________________________________________ -->
 <hr>
@@ -162,6 +188,11 @@ $alunos = [
 ?>
 
   <!-- 7ª Digitação (Aqui) -->
+
+  <p>Nome: <?=$aluno['nome']?></p>
+  <p>Idade: <?=$aluno['idade']?></p>
+
+  <hr>
 
 <?php
     }
