@@ -2,6 +2,10 @@
 
 <!-- 1ª Digitação (Aqui) -->
 
+<?php
+    include "recursos.php"
+?>
+
 <!DOCTYPE html>
 <html lang="pt-br">
     <head>
@@ -22,9 +26,14 @@
 
         <!-- 2ª Digitação (Aqui) -->
 
+        <h2 class = "destaque"> <?=ESCOLA?></h2>
+
+
         <!-- Recuperando o conteúdo da variável $curso definida em "recursos.php" -->
 
         <!-- 3ª Digitação (Aqui) -->
+
+        <p>Estamos Fazendo o Curso <?=$curso?></p>
 
         <!-- Recuperando o conteúdo do array $tecnologia definido em "recursos.php" e criando uma lista com foreach -->
         <ul>
@@ -39,7 +48,12 @@
         
         <!-- 4ª Digitação (Aqui) -->
 
+        <p>O aluno Chapolin Colorado tem 25 anos e é <?=verificaIdade(25)?> de idade</p>
+
+
         <hr>
+
+
 
         <!-- Recupera o conteudo do arquivo externo "textos.php" -->
         <article>
@@ -47,6 +61,10 @@
             <!-- No caso de erros o required para tudo e o include não -->
             
             <!-- 5ª Digitação (Aqui) -->
+
+            <?php
+                include "textos.php"
+            ?>
 
         </article>
         
