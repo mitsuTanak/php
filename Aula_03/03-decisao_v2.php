@@ -125,15 +125,50 @@
 
     //  3ª Digitação (Aqui) 
 
+    if($opcao === 1){
 
-?>
+        $opcaoEscolhida = "Pastel";
+
+    } elseif ($opcao === 2) {
+
+            $opcaoEscolhida = "Pizza";
+        }elseif ($opcao === 3) {
+
+            $opcaoEscolhida = "Esfiha";
+        }else {
+
+        $opcaoEscolhida = "Opção invalida" ;
+        }
+
+
+    ?>
     <p><?=$opcaoEscolhida?></p>
 <hr>
 
-<!-- ___________________________________________________________________ -->
-<h2 class="destaque">Switch/Case</h2>
+    <!-- ___________________________________________________________________ -->
+    <h2 class="destaque">Switch/Case</h2>
 
-<!-- 4ª Digitação (Aqui) -->
+    <!-- 4ª Digitação (Aqui) -->
+
+    <?php
+        switch ($opcao) {
+            case 1:
+                $pedido = "Pastel";
+            break;
+
+            case 2:
+                $pedido = "Pastel";
+            break;
+            case 3:
+                $pedido = "Pastel";
+            break;
+            
+            default:
+                $pedido = "Opção Invalida"    ;
+            break;
+        }
+    ?>
     
+    <p><?=$opcao?></p>
 </body>
 </html>
