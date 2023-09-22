@@ -11,31 +11,86 @@
 <body>
     <h1 class="destaqueP">Estruturas de Controle Condicional</h1>
     <hr>
-<!-- ___________________________________________________________________ -->
+    <!-- ___________________________________________________________________ -->
     <h2 class="destaque">SE Simples</h2>
 
 
-<!-- 1ª Digitação (Aqui) -->
+    <!-- 1ª Digitação (Aqui) -->
+
+    <?php
+
+        $N1 = 1;
+        $N2 = 5;
+        
+        if($N1 < $N2){
+    ?>
+
+        <p><?=$N2?> É maior que <?=$N1?></p>
+
+    <?php
+        }
+    ?>
 
 
-<hr>
-<!-- ___________________________________________________________________ -->
+
+    <hr>
+    <!-- ___________________________________________________________________ -->
     <h2 class="destaque">SE Composta</h2>
 
-<?php
-    $produto = "Iphone 15 Pro Max";
-    $qtdEmEstoque = 0; 
-    $qtdCritica = 14; 
-?>
+    <?php
+        $produto = "Iphone 15 Pro Max";
+        $qtdEmEstoque = 0; 
+        $qtdCritica = 14; 
+    ?>
 
     <h3><?=$produto?></h3>
 
 
-<!-- 2ª Digitação (Aqui) -->
+    <!-- 2ª Digitação (Aqui) -->
+
+    <?php
+    
+        if($qtdEmEstoque < $qtdCritica){
+    
+    ?>
+
+    <p>O estoque está em baixo</p>
+
+    <?php
+
+        }
+
+    ?>
+
+    <?php
+        
+        if($qtdEmEstoque == 0){
+
+    ?>
+
+    <p class="repor"><mark>O Estoque ACABOU</mark></p>
 
 
-<hr>
-<!-- ___________________________________________________________________ -->
+    <?php
+        }
+        
+        else {
+
+    ?>
+
+    <p class="ok">O Estoque está OK</p>
+
+    <?php
+
+        }
+
+    ?>
+
+
+
+
+    <hr>
+    <!-- ___________________________________________________________________ -->
     <h2 class="destaque">Encadeada</h2>
 
      <!-- Cardápio digital
