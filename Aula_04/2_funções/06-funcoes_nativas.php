@@ -119,20 +119,32 @@
     <!-- Filtra indicando um preenchimento errado -->
         <h2>Filtros</h2>
     <?php
-    $email = "ignacio@gmail.com.br";
-    $ataque = "<script> document.body.innerHTML = 'Sou ráqui!! hahahah >.<' </script>";
+        $email = "ignacio@gmail.com.br";
+        $ataque = "<script> document.body.innerHTML = '<h1>Sou ráqui!! hahahah >.<</h1>' </script>";
 
-    // echo $ataque;
+        // echo $ataque;
 
-    //  6ª Digitação (Aqui)
+        //  6ª Digitação (Aqui)
 
+        $ataqueAnulado = filter_var($ataque, FILTER_SANITIZE_SPECIAL_CHARS);
+
+        echo $ataqueAnulado
     ?>
 
     <p>
         <?=var_dump(filter_var($email, FILTER_VALIDATE_EMAIL))?>
     </p>
 
+    <hr>
+    <h3>Desafio</h3>
+    <?php
+        $assinatura = "mocchi@yahoo.com";
+        $pixacao = "<script> document.body.innerHTML = 'Seu Site é um LIXO 🤮🤢🤮'</script>";
 
+        // echo $pixacao;
+    ?>
+
+    <?=var_dump(filter_var($assinatura, FILTER_VALIDATE_EMAIL)) ?>
 
     <!-- ___________________________________________________________ -->
     <hr>
@@ -166,6 +178,20 @@
     <!-- Como checar se a senha é a correta -->
 
     <!-- 7ª Digitação (Aqui)  -->
+    <?php
+        $i = "123abc";
+        
+        $iSHA256 = hash('sha256', $i);
+
+        echo $iSHA256 . "<br>";
+
+        if ($iSHA256 === $senhaSHA256) {
+            echo "Senha correta";
+        } else {
+            echo "Senha Incorreta";
+        }
+        
+    ?>
     
 </body>
 </html>
